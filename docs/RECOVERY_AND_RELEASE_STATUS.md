@@ -7,7 +7,7 @@
 - Full ZIP: [release/Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip](../release/Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip); SHA-256 `4971969d21f1ba09741e2551eba952a21ef2bb1d4cd33334066e45cb7e73cb95`; stored historical Git blob SHA-1 `68bd7a36eb749b6039bd63b5f0e83c88d8b9f06b`.
 - Direct Zagreb 25-site CSV: [release/data/Zagreb25_primary.csv](../release/data/Zagreb25_primary.csv); historical Git blob SHA-1 `d1a514bf037da9b8a62167b95e5839e466eb44a4`; identical source also in `public_method/data/`.
 - The previously released results-only ZIP remains as a historical lower-distribution option: SHA-256 `e65d2485eea6cd87a557e0223dc72f044d7f6bd60efaad02b9c32627704d6a9d`. It lacks Zagreb source rows and cannot independently replay the complete cross-study verification.
-- Original full archive was restored without rewriting ZIP contents or individual Zagreb CSV values. The public full-archive SHA-256 was previously recorded in the source package; current Git history demonstrates the original blob is preserved. This GitHub restoration alone does not constitute a fresh independent numerical rerun.
+- Original full archive was restored without rewriting ZIP contents or individual Zagreb CSV values. The public full-archive SHA-256 was previously recorded in the source package; current Git history demonstrates the original blob is preserved. A subsequent [public clean-environment run](PORTABILITY_AUDIT_20261012.md) PASSED the ZIP checksum, 54/54 file hashes, 80/80 SLSQP comparisons (max error 6.99e-15), and all 16,000 held-out split numeric records (max error 9.05e-15); the original strict byte equality check FAILED under newer NumPy/SciPy/pandas, and is not represented as passing.
 
 ## Original completed numerical and integrity audit (historical provenance)
 
@@ -19,7 +19,7 @@
 - Original complete public ZIP: 55 ZIP entries and 54/54 payload SHA-256 checks.
 - Subset-only verifier from the temporary results-only distribution: 40/40 SLSQP and four matching held-out output files.
 
-These results were executed *before* the current documentation revision. Numerical reproduction in a newly installed environment is separately reportable only after a new run.
+The historical checks above were performed before the new GitHub action. The independent clean-environment verification after restoration is separately documented in [the portability audit](PORTABILITY_AUDIT_20261012.md).
 
 ## Zagreb origin and rights
 
