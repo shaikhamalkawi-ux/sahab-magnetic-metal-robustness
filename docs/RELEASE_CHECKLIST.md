@@ -1,37 +1,27 @@
-# Sahab V34 — Release checklist
+# Sahab V34 — GitHub publication status
 
-**Current status: PARTIAL PUBLIC METHOD RELEASE.** The original V34 Zagreb input, generic algorithm, controlled simulation code, and 4,000 source-matched simulation replicate records are available in `public_method/`. The complete primary Sahab/Amman source-derived inputs and full reviewer workflow are not yet public.
+**Full reproducibility archive is PUBLIC on GitHub** under [release/](../release/). Zenodo is explicitly deferred until the article is accepted.
 
-## Source-of-truth and scientific lock
+## Completed
 
-- [x] Recovered original `Sahab_V34_Reviewer_Confidential_Reproducibility.zip` from Project Library (private working copy, not public).
-- [x] Recovered and partially published original `Sahab_V34_Public_Method_Reproducibility.zip` source files; seven Git blobs byte-matched.
-- [x] Recovered original `Sahab_V34_MDPI_Environments_Source.zip` for private journal-text synchronization.
-- [x] Recovered original `Sahab_V34_Complete_INTERNAL_20261012.zip`; manifest 59/59 original ZIP entries PASS; nested code and data archives match standalone copies.
-- [x] Original archives: reviewer manifest 54/54, public method manifest 7/7, and parent manifest 59/59 PASS before reruns; 80 independent SLSQP checks PASS and frozen-primary byte replay PASS. No approximations or reconstructed mock rows were used.
-- [ ] Verify no scientific result, source reconciliation, N4/N5 definition, or inferential boundary has been changed.
+- [x] Recovered original internal V34, reviewer reproducibility, public method, and LaTeX archives from existing Project 58 Library; no user re-upload.
+- [x] Parent internal archive: 59/59 source-file hash checks. Original reviewer package: 54/54 source hash checks.
+- [x] Built a clean publication-specific ZIP: 55 entries, original analytic inputs and full split-level records, without original restricted-access notices, publisher PDFs, credentials, or transient compiled Python files.
+- [x] Confirmed 54/54 release SHA-256 file manifest on execution.
+- [x] Independently reran 80 SLSQP checks, with numerical maximum difference `7.327471962526033e-15`.
+- [x] Replayed five primary held-out output files byte-for-byte.
+- [x] Published full archive and checked the remote Git blob SHA against the local archive.
+- [x] Published individually browsable original 48-row Sahab, 44-row Amman, and 25-row Zagreb input CSVs, scripts, and summaries; **21/21** identical Git blob hashes for these published files.
+- [x] Retained and attributed source-specific Zagreb CC BY 4.0 adaptation.
+- [x] Recorded Amman sample-8 input-definition discrepancy versus the earlier public master, without altering V34.
 
-## Rights, files, and safety
+## Administrative / future
 
-- [x] Coauthors' consent to public release reported by corresponding author (12 October 2026).
-- [ ] Preserve documentary permissions for *public redistribution and reuse licensing* of historical Sahab and Amman–Airport source-derived values, including any thesis material held by a separate rights holder.
-- [ ] Attribute the Zagreb CC BY 4.0 original article and label the paired-table transcription as an adaptation.
-- [ ] Inspect the confidential archive: exclude passwords, unpublished personal information, sensitive paths, and publisher/third-party PDF binaries that lack distribution rights.
-- [ ] Make dataset-specific license/NOTICE files; do not apply a blanket CC BY 4.0 or MIT license to third-party content without authorization.
+- [x] Coauthor consent to manuscript and data-release visibility confirmed by corresponding author in chat.
+- [ ] File documentary evidence for any underlying rights-holder grant not currently represented by coauthor approval; do not assume this repository confers a blanket open reuse license.
+- [ ] Confirm the manuscript is not simultaneously under review elsewhere before journal submission.
+- [ ] Confirm current professional contact data for Abdel-Jaleel Al-Nawiseh in the journal portal, as applicable.
+- [ ] Complete manuscript Submission Clean, including update to the Data Availability statement to point to the public GitHub archive.
+- [ ] Following **acceptance**, optionally create a Zenodo archive/DOI and update both metadata and publication-facing links. **Do not create a Zenodo deposit now.**
 
-## Reproducibility
-
-- [ ] Add exact, source-admitted analytic CSVs, the sample-identity reconciliation ledger, and input-selection record.
-- [ ] Add full reviewer-side source code and input records after rights review. Public subset already contains the original generic engine, simulation script, original requirement ranges, public Zagreb CSV and 4,000 frozen simulation records.
-- [ ] Independently run the release workflow after fresh extraction, compare main V34 outputs and retained split-level files, and produce an exact SHA-256 manifest.
-- [ ] Document what can and cannot be reproduced from public files; do not imply spatial/prospective validation.
-
-## Publication
-
-- [ ] Freeze validated GitHub snapshot and tag a release (e.g., `v1.0.0` only when verified).
-- [ ] Archive the exact release in Zenodo, or publish a distinct dataset record with explicit software cross-link; avoid treating two DOI records for the same files as independent evidence.
-- [ ] Record the actual DOI, public record URL, version, and Git commit in this README and citation metadata.
-- [ ] Only after actual publication, update *all* Data Availability, Supplement, and journal-facing references to confidential archives.
-- [ ] Recheck MDPI submission text, agreement on authorship, and link integrity.
-
-**Locked study scopes:** Sahab 56 historical records / 54 resolved / 48 principal, Amman–Airport 44, Zagreb 25 matched surface sites.
+The fixed scientific results and claim boundaries remain V34.
