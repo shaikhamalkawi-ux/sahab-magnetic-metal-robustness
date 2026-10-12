@@ -1,33 +1,24 @@
-# Distribution update — Zagreb source data withheld
+# Sahab V34 — release and journal-production checklist
 
-The public GitHub release has been replaced by a version that does **not** redistribute Zagreb's 25-site chemical/magnetic observation table. Derived Zagreb statistics remain. Original Sahab/Amman analytic inputs remain public. Full cross-study replay needs readers to source Zagreb measurements independently. Public subset checks: 40/40 SLSQP and four 2,000-split output comparisons. **Earlier checklist statements about publishing Zagreb CSVs have been superseded.** No scientific result was changed. Zenodo remains postponed.
+## GitHub public data release
 
----
+- [x] V34 scientific results locked; no new measurements, optimization or retuning.
+- [x] Original full-data ZIP found in previous Git history and restored byte-identically at `release/Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip`.
+- [x] Original Zagreb 25-row CSV source Git blob restored in `release/data/` and `public_method/data/`.
+- [x] Source crosswalk and explicit Zagreb CC BY 4.0 attribution included.
+- [x] Existing Sahab 48 / Amman 44 CSVs, split outputs, code and optional reduced ZIP preserved.
+- [x] Public README, release README, checksums, release-status record and journal Data Availability draft synchronized to the restored default archive.
+- [ ] A **new, independent** clean-environment verification run after restoration (historical V34 full checks already passed; do not mislabel the historical audit as newly executed).
+- [ ] Independently reconcile the Amman sample-8 definition difference if source equivalence is later claimed; no change to locked V34 without demonstrated error.
 
-# Sahab V34 — GitHub publication status
+## Journal production — still separate from GitHub publication
 
-**Full reproducibility archive is PUBLIC on GitHub** under [release/](../release/). Zenodo is explicitly deferred until the article is accepted.
+- [ ] Replace the old Zagreb-results-only Data Availability statement in the manuscript with [the current draft](JOURNAL_DATA_AVAILABILITY_DRAFT.md).
+- [ ] Replace matching Zagreb-withheld descriptions in the supplement and any journal cover metadata.
+- [ ] Update Abdel-Jaleel Al-Nawiseh's author contact using the user-supplied address, **after confirming his preferred publication address**. His institution remains the historically documented affiliation unless a current affiliation is separately verified.
+- [ ] Compile and inspect Main PDF (19 pages historically), Supplement PDF (12 pages historically), combined PDF and clean Overleaf source; verify figure/table placement, references and author declarations.
+- [x] Corresponding author reported coauthor approval, non-simultaneous submission, HCT APC support, and data-release permission subject to underlying source rights. These are user-confirmed, not independently verified documents.
+- [ ] Do not submit without the user's explicit submission instruction.
+- [ ] Zenodo record/DOI only *after acceptance*. No placeholder DOI.
 
-## Completed
-
-- [x] Recovered original internal V34, reviewer reproducibility, public method, and LaTeX archives from existing Project 58 Library; no user re-upload.
-- [x] Parent internal archive: 59/59 source-file hash checks. Original reviewer package: 54/54 source hash checks.
-- [x] Built a clean publication-specific ZIP: 55 entries, original analytic inputs and full split-level records, without original restricted-access notices, publisher PDFs, credentials, or transient compiled Python files.
-- [x] Confirmed 54/54 release SHA-256 file manifest on execution.
-- [x] Independently reran 80 SLSQP checks, with numerical maximum difference `7.327471962526033e-15`.
-- [x] Replayed five primary held-out output files byte-for-byte.
-- [x] Published full archive and checked the remote Git blob SHA against the local archive.
-- [x] Published individually browsable original 48-row Sahab, 44-row Amman, and 25-row Zagreb input CSVs, scripts, and summaries; **21/21** identical Git blob hashes for these published files.
-- [x] Retained and attributed source-specific Zagreb CC BY 4.0 adaptation.
-- [x] Recorded Amman sample-8 input-definition discrepancy versus the earlier public master, without altering V34.
-
-## Administrative / future
-
-- [x] Coauthor consent to manuscript and data-release visibility confirmed by corresponding author in chat.
-- [ ] File documentary evidence for any underlying rights-holder grant not currently represented by coauthor approval; do not assume this repository confers a blanket open reuse license.
-- [ ] Confirm the manuscript is not simultaneously under review elsewhere before journal submission.
-- [ ] Confirm current professional contact data for Abdel-Jaleel Al-Nawiseh in the journal portal, as applicable.
-- [ ] Complete manuscript Submission Clean, including update to the Data Availability statement to point to the public GitHub archive.
-- [ ] Following **acceptance**, optionally create a Zenodo archive/DOI and update both metadata and publication-facing links. **Do not create a Zenodo deposit now.**
-
-The fixed scientific results and claim boundaries remain V34.
+Refer to [complete source and rights note](../release/docs/SOURCE_RIGHTS_AND_CROSSWALK.md).

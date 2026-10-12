@@ -1,32 +1,33 @@
-# Data-source, authorization, and sample-definition crosswalk
+# V34 source rights and sample-definition crosswalk
 
-**Public release update (12 October 2026): The Zagreb 25-site numerical observations are NOT distributed through the current public GitHub files or replacement ZIP. Only derived Zagreb statistics and computation code are included.** Earlier public copies were withdrawn from the current branch; Git history and previously downloaded copies may remain accessible.
+**Current public distribution:** Complete three-study V34 ZIP, including the 25-site Zagreb surface observation transcription, is publicly available at [Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip](../Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip). The alternative results-only Zagreb ZIP is retained as a *historical reduced option*. No old exclusion statement applies to the default full release.
 
-This document applies to the **GitHub-only** V34 reproducibility deposit. The manuscript authors have been reported by the corresponding author as consenting to this public availability. No documentation of a separate publisher-granted or university-granted reuse licence has been supplied to this audit. Public files are not automatically released under a new blanket licence; dataset-specific legal rights and source attribution remain in force.
+The corresponding author reports approval by the manuscript coauthors for public research-data availability, subject to applicable source rights. Such approval is distinct from ownership of source measurements and original publications; no blanket data license is inferred.
 
-## Sahab
-1. El-Hasan, T. (2002). *Urban geochemistry: Heavy metals distribution on the soils of relatively heavy industrial city of Sahab, central Jordan*. Mu'tah Lil-Buhuth wad-Dirasat, Pure Sciences, 17(3), 49–67.
-2. El-Hasan, T.; Al-Nawiseh, A.-J.; Lataifeh, M.S. (2009). *Environmental magnetism: Heavy metal concentrations in soils as a function of magnetic materials content*. Jordan Journal of Earth and Environmental Sciences 2(Special Publication No. 1), 38–49.
-3. Source-derived workbook and thesis reconciliation are part of the original authors' research provenance; source-table transcriptions and candidate mappings must not be mistaken for new field observations.
+## Sahab, Jordan
 
-Sahab full magnetic study: 56; 54 resolved chemistry identities; 48 in the ±0.10 mg kg⁻¹ primary reconstructed subset; two identities unresolved. The publicly provided 48-row analytic CSV is not a full 56-row historical sample archive. The workbook documents the larger historical accounting.
+Original research: El-Hasan, T. (2002), *Urban geochemistry: Heavy metals distribution on the soils of relatively heavy industrial city of Sahab, central Jordan*, Mu'tah Lil-Buhuth wad-Dirasat, Pure Sciences, 17(3), 49–67; El-Hasan, T.; Al-Nawiseh, A.-J.; Lataifeh, M.S. (2009), *Environmental magnetism: Heavy metal concentrations in soils as a function of magnetic materials content*, Jordan Journal of Earth and Environmental Sciences, 2 (Special Publication No. 1), 38–49.
 
-## Amman–Airport
-1. Al-Gharram, M.S.S. (2022). *Measurement of magnetic susceptibility and heavy metals concentration in roadside topsoil along Amman–Airport Highway, Jordan*. Yarmouk University master's thesis.
-2. Al-Momani, I.F.; Lataifeh, M.S.; Al-Gharram, M.S. (2026). Jordan Journal of Physics 19(2), 213–222.
-3. An earlier, separately maintained public reproducibility deposit is https://github.com/shaikhamalkawi-ux/amman-airport-magnetic-screening , with archived DOI https://doi.org/10.5281/zenodo.22973207. That deposit distinguishes MIT licensed original software from CC BY 4.0 author-owned data and documentation. This is a source attribution/cross-reference, **not a new Sahab DOI**.
+Original 56 magnetic records, 54 resolved chemistry identities, and 48 primary reconstructed analytic records. The public 48-row CSV is **not** a full 56-row source export; source workbooks and reconciliation evidence are in the complete archive. Do not represent derivations/transcriptions as new measurements.
 
-**Reconstruction discrepancy to keep visible:**
-- V34 original locked input: sample ID 8 `Fine_LF=246.05`.
-- Separate public independently reconstructed Amman master: sample ID 8 `Fine_LF_reconstructed≈224.390243902439`.
-- Its data dictionary documents a sample-8 adopted fine-mass rule that differs from some historical cached/formula entries. This note does not determine which candidate is scientifically preferable or identify complete cause of disagreement; cross-source equivalence remains unverified. Never merge values silently or recalculate the locked V34 results with the alternate source.
-- Different extracted chemistry display precision in the sources can lead to small per-component rounding differences.
+## Amman–Airport, Jordan
 
-## Zagreb
-Frančišković-Bilinski, S.; Peco, J.; Sakan, S.; Đorđević, D.; Inđić, D. (2023). *Magnetic and geochemical properties of Zagreb city area soils*. *Minerals* 13(12), 1481. https://doi.org/10.3390/min13121481 . Source article: **CC BY 4.0**, attribution and indication of table adaptation required. The ORIGINAL V34 analysis joined Table 10 chemistry and Appendix A magnetic readings for 25 matched *surface* sites, excluding two deeper-layer rows. This joined numeric table is **not** part of the revised public release. These are source-derived published measurements, not independent new measurements.
+Al-Gharram, M.S.S. (2022), *Measurement of magnetic susceptibility and heavy metals concentration in roadside topsoil along Amman–Airport Highway, Jordan*, Yarmouk University master's thesis; Al-Momani, I.F.; Lataifeh, M.S.; Al-Gharram, M.S. (2026), Jordan Journal of Physics, 19(2), 213–222.
 
-## Data-license limits
-- No blanket MIT licence is attached to third-party historical measurements.
-- No blanket CC BY 4.0 licence for all original input files is implied merely by the Zagreb source licence.
-- The historical publisher/table and thesis-rights status should be confirmed if broader redistribution or derivatives beyond the reported permission are proposed.
-- No author email, original publisher PDF binary, personal credential, or unpublished participant data is included in this archive.
+Separately maintained public reference archive: https://github.com/shaikhamalkawi-ux/amman-airport-magnetic-screening ; its historical DOI is https://doi.org/10.5281/zenodo.22973207. **That DOI belongs to the separate Amman project, not Sahab.**
+
+**Unresolved input-definition difference:** sample 8 `Fine_LF=246.05` in the locked Sahab V34 comparative input, versus `Fine_LF_reconstructed≈224.390243902439` in the separate public Amman reconstruction. The source/protocol crosswalk remains incomplete; this does not independently determine which value is superior. Never silently replace the V34 value or assert datasets are identical.
+
+## Zagreb, Croatia
+
+Frančišković-Bilinski, S.; Peco, J.; Sakan, S.; Đorđević, D.; Inđić, D. (2023). Magnetic and Geochemical Properties of Zagreb City Area Soils. Minerals 13(12), 1481. https://doi.org/10.3390/min13121481. Official source: https://doi.org/10.3390/min13121481; **CC BY 4.0** (attribution, license link, indication of adaptation).
+
+The `Zagreb25_primary.csv` was adapted from published Table 10 chemistry and Appendix A, Table A1 field and laboratory magnetic values, matched by surface-site identifier/name. 25 matched surface sites retained; two additional deep-layer chemical rows (64B and 124b) excluded. Values are original published observations reassembled for the V34 analytic protocol, **not new field measurements**. Refer to [Zagreb attribution and changes](ZAGREB_SOURCE_ATTRIBUTION.md). The source reports more magnetic field locations; the matched V34 file must not be conflated with that full survey.
+
+The original Zagreb source's CC BY 4.0 terms apply to the adapted published numerical table. They do **not** automatically license Sahab/Amman primary data, original articles/PDFs, images, or third-party material.
+
+## Rights limits and claims
+
+No blanket MIT or CC BY 4.0 license is asserted over all three studies or all source publications. Any rights-holder condition not evidenced by the cited source remains a separate responsibility of the depositing authors. No credential, private account data, or original publisher PDF is contained in this release.
+
+No causal Fe-source separation, present-day site diagnosis, environmental compliance determination, real-world predictive validation, or Zagreb instrument-superiority result is asserted.

@@ -1,58 +1,32 @@
-# UPDATED DISTRIBUTION SCOPE — Zagreb results only
+# Sahab V34 — historical archive recovery and current publication scope
 
-The earlier statements below describe the initial V34 publication and are superseded **only as to public Zagreb source-data availability**. Both Zagreb observation CSV paths and the earlier full-data ZIP have been removed from the current GitHub branch. Replacement: `release/Sahab_V34_ResearchData_ResultsOnlyZagreb_20261012.zip`, SHA-256 `e65d2485eea6cd87a557e0223dc72f044d7f6bd60efaad02b9c32627704d6a9d`. This carries Sahab/Amman raw analytic CSVs, source reconciliation and unchanged derived Zagreb results, but **not** Zagreb's observations. New public verification: 40 Sahab/Amman SLSQP checks and 4 split-output replays; original full 80-check internal audit was done before withdrawal and is not publicly replayable without independently sourcing Zagreb data. Older Git history/downloads may still contain earlier files.
+**12 October 2026; scientific baseline V34 unchanged.**
 
----
+## Present default: complete three-study public release
 
-# Sahab V34 — Verified recovery and public release boundary
+- Full ZIP: [release/Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip](../release/Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip); SHA-256 `4971969d21f1ba09741e2551eba952a21ef2bb1d4cd33334066e45cb7e73cb95`; stored historical Git blob SHA-1 `68bd7a36eb749b6039bd63b5f0e83c88d8b9f06b`.
+- Direct Zagreb 25-site CSV: [release/data/Zagreb25_primary.csv](../release/data/Zagreb25_primary.csv); historical Git blob SHA-1 `d1a514bf037da9b8a62167b95e5839e466eb44a4`; identical source also in `public_method/data/`.
+- The previously released results-only ZIP remains as a historical lower-distribution option: SHA-256 `e65d2485eea6cd87a557e0223dc72f044d7f6bd60efaad02b9c32627704d6a9d`. It lacks Zagreb source rows and cannot independently replay the complete cross-study verification.
+- Original full archive was restored without rewriting ZIP contents or individual Zagreb CSV values. The public full-archive SHA-256 was previously recorded in the source package; current Git history demonstrates the original blob is preserved. This GitHub restoration alone does not constitute a fresh independent numerical rerun.
 
-**Record date:** 12 October 2026. **Scientific baseline:** V34, unchanged.
+## Original completed numerical and integrity audit (historical provenance)
 
-## Source archives recovered
+- Original internal V34 archive SHA-256 manifest: 59/59.
+- Original reviewer/source archive manifest: 54/54.
+- Original full independent SLSQP comparison: 80/80; maximum absolute discrepancy `7.327471962526033e-15`.
+- Original primary held-out replay: five files byte-identical.
+- Public-method original verification: seven/ seven file-hash matches; simulation outputs reproduced byte-for-byte.
+- Original complete public ZIP: 55 ZIP entries and 54/54 payload SHA-256 checks.
+- Subset-only verifier from the temporary results-only distribution: 40/40 SLSQP and four matching held-out output files.
 
-Original archives were recovered directly from the existing Project 58 ChatGPT Library without reconstructing or inventing numerical inputs. The original `Sahab_V34_Complete_INTERNAL_20261012.zip` was checked before extraction.
+These results were executed *before* the current documentation revision. Numerical reproduction in a newly installed environment is separately reportable only after a new run.
 
-- Parent archive: 59/59 listed SHA-256 payloads match.
-- Original reviewer package: 54/54 listed SHA-256 payloads match before execution.
-- Pristine clean rerun (`PYTHONDONTWRITEBYTECODE=1 python code/verify_v34.py`): 80 independent SLSQP checks; maximum absolute difference `7.327471962526033e-15`, five primary split-level files reproduce byte-for-byte, and the reviewer manifest remains 54/54.
-- Principal reviewer checks: 5/5 PASS.
-- Original public-method package: 7/7 SHA-256 records PASS.
-- Public-method simulation outputs were regenerated from the original code and matched the archived `simulation_replicates.csv` and `simulation_summary.json` byte-for-byte.
+## Zagreb origin and rights
 
-The **unaltered internal and original confidential reviewer archive ZIPs are not attached** to GitHub. A clean **public derivative archive**, created from the verified original analysis records and without obsolete restricted-access prose, is published at [release/](../release/). The release ZIP contains the primary Sahab/Amman/Zagreb input CSVs and original analytic outputs.
+Frančišković-Bilinski, S.; Peco, J.; Sakan, S.; Đorđević, D.; Inđić, D. (2023). Magnetic and Geochemical Properties of Zagreb City Area Soils. Minerals 13(12), 1481. https://doi.org/10.3390/min13121481. Published article/data in Table 10 and Appendix A under CC BY 4.0. The adapted analysis table matches 25 *surface* observations; two deeper-layer chemistry measurements are omitted. See [attribution note](../release/docs/ZAGREB_SOURCE_ATTRIBUTION.md). Nothing in the Zagreb license grants license rights over Sahab or Amman source observations.
 
-## Public method material uploaded
+## Preserved scientific boundary
 
-The following seven files were copied from the existing V34 public-safe ZIP into `public_method/`, without changing their bytes. Comparison of original `git hash-object` blob SHA-1 values to the GitHub repository tree yields **7/7 exact matches**:
+Sahab: 56 historical rows, 54 resolved identities, 48 primary analysis rows. Amman–Airport: 44 rows; `Fine_LF` sample 8 remains 246.05 despite differing external reconstructed value ~224.390243902439. Zagreb: 25 sites. All V34 equations, finite-sample bounds, split output, simulation, source deviations, and conclusions are unchanged; no new physical measurements or journal acceptance are claimed.
 
-- `public_method/README.md`
-- `public_method/requirements.txt`
-- `public_method/data/Zagreb25_primary.csv`
-- `public_method/code/target_family_robustness.py`
-- `public_method/code/run_v34_simulation.py`
-- `public_method/results/simulation_replicates.csv`
-- `public_method/results/simulation_summary.json`
-
-Additionally, `public_method/results/V34_Derived_Summary.csv` was copied byte-identically from `Research_Analysis/V34_Derived_Summary.csv` in the recovered V34 parent archive. It contains source-excluded aggregate statistics, not sample-level Sahab or Amman inputs.
-
-From the `public_method/` directory, the original source README documents the executable Zagreb and simulation commands. Do not label the simulation as measured environmental data.
-
-## Provenance and copyright boundary
-
-The 25 Zagreb matched-site observations are adapted from:
-
-> Frančišković-Bilinski, S.; Peco, J.; Sakan, S.; Đorđević, D.; Inđić, D. (2023). *Magnetic and geochemical properties of Zagreb city area soils*. *Minerals*, 13(12), 1481. https://doi.org/10.3390/min13121481. Source article license: **CC BY 4.0**. Adaptation: match reported Table 10 chemistry to Appendix A surface field/laboratory readings, omit two deeper-layer chemical records, select the six numeric chemical analytes used by the study.
-
-The source-derived Sahab and Amman–Airport primary analytic inputs and historical reconciliation ledger are now included in the clean [release ZIP](../release/Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip). The user has confirmed manuscript-coauthor consent to publication, but this does not independently establish a blanket onward reuse license covering all source copyrights. All five current manuscript authors have reportedly consented to publication; before re-releasing the archival source-derived sample rows as CC BY 4.0, confirm that the appropriate underlying source holders have authority to grant this public reuse license. Source-data approval and source-specific licensing are distinct from coauthor approval of the paper.
-
-A prior separately maintained Amman–Airport reproducibility repository already contains a CC BY 4.0 statement for author-owned archived data and a citable archive (https://doi.org/10.5281/zenodo.22973207). However, its independently reconstructed `Fine_LF_reconstructed` field is **not identical** to the locked V34 `Fine_LF` input for every row. In particular, sample ID 8 is `246.05` in V34 and approximately `224.390243902439` in that public reconstructed master, while the public master explicitly documents an alternative adopted fine-mass rule for sample 8. This source-definition discrepancy requires attribution/audit before claiming these two CSVs are interchangeable. The V34 value and scientific outputs have **not** been changed.
-
-## Claim boundaries
-
-V34's full-sample bounds, selected-weight held-out statistics, and simulation results remain locked. The random held-out runs are exploratory, not population confidence guarantees, spatial transfer validation, prospective prediction, or causal source separation. Zagreb paired-channel sign reversals should not be described as a stable device-superiority claim.
-
-**Zenodo status:** No Sahab V34 GitHub release was archived in Zenodo yet, and no Sahab V34 repository DOI has been assigned. Do not cite a placeholder DOI.
-
-## GitHub full-archive publication (12 October 2026)
-
-Published ZIP SHA-256: `4971969d21f1ba09741e2551eba952a21ef2bb1d4cd33334066e45cb7e73cb95`. Archive 55 ZIP entries, full 54/54 manifest PASS and 80/80 independent check PASS. The GitHub ZIP blob `68bd7a36eb749b6039bd63b5f0e83c88d8b9f06b` matches the original local Git hash. The direct original research files separately visible in `release/data/`, `release/code/`, `release/results/` and `release/docs/` passed 21/21 blob-hash comparisons. No Zenodo upload was performed or should be performed before acceptance per user instructions.
+**Policy:** GitHub now; Zenodo **only after journal acceptance**. No DOI has been created for Sahab. The final MDPI PDFs must be synchronized with the complete archive before journal submission.
