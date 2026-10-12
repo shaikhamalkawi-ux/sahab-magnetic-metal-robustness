@@ -1,13 +1,17 @@
-# Public method materials for Sahab V34
+# Sahab V34 public method — Zagreb sample data withheld
 
-This public-safe package contains the generic target-family robustness engine, the controlled simulation stress test, and a 25-row Zagreb example derived from Frančišković-Bilinski et al. (2023), Minerals 13(12), 1481, DOI 10.3390/min13121481 (CC BY 4.0).
+This smaller directory contains the generic target-family method, controlled simulation, and frozen simulation results. The former Zagreb 25-row numeric example was withdrawn at the depositor's request. **No Zagreb observations are supplied here.**
 
-It does **not** contain source-derived Sahab or Amman-Airport sample-level data, whose public redistribution rights have not been established.
+The original Zagreb study, Frančišković-Bilinski et al. (2023), *Minerals* 13, 1481, https://doi.org/10.3390/min13121481, contains the site measurements for readers wishing to make an independent matched transcription.
 
-Example endpoint calculation:
-`python code/target_family_robustness.py --input data/Zagreb25_primary.csv --magnetic field_ms --magnetic2 lab_ms --fe Fe --metals Mn Cu Ni Zn`
+The generic engine remains usable with an independently supplied CSV:
+```sh
+python code/target_family_robustness.py --input YOUR_INDEPENDENTLY_SOURCED_CSV --magnetic field_ms --magnetic2 lab_ms --fe Fe --metals Mn Cu Ni Zn
+```
 
-Simulation stress test:
-`python code/run_v34_simulation.py`
+The simulation requires no Zagreb source CSV:
+```sh
+python code/run_v34_simulation.py
+```
 
-The simulation is methodological and is not environmental evidence.
+The simulation is methodological, not environmental evidence. See [the main release](../release/) for Sahab and Amman input data and derived Zagreb statistical results.
