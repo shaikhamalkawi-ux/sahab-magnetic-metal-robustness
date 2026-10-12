@@ -5,7 +5,7 @@
 - SHA-256: `4971969d21f1ba09741e2551eba952a21ef2bb1d4cd33334066e45cb7e73cb95`
 - Previously verified package: 55 ZIP entries, 54 manifested file payloads
 - Original tested replay: 80 independent SLSQP comparisons, maximum absolute difference `7.327471962526033e-15`; five primary held-out files replayed byte-for-byte; 54/54 SHA-256 file checks
-- The archive is an unchanged historical Git blob restored to `main`. Restoration proves *identity with the historical blob*, not a new independent rerun.
+- The archive is an unchanged historical Git blob restored to `main`. Restoration proves *identity with the historical blob*. Subsequently a new [clean independent portability replay](../docs/PORTABILITY_AUDIT_20261012.md) passed ZIP SHA-256, 54/54 file integrity, 80/80 optimization comparisons, and numeric parity for all 16,000 split rows (max 9.05e-15); original strict CSV byte parity failed with the newly installed numerical libraries and is explicitly reported.
 - Inputs: Sahab n=48, Amman–Airport n=44, Zagreb n=25 published matched surface locations. Historical Sahab records total 56; the reconciled analytical subset is not the full historical survey.
 
 **Reproduce:** Extract the complete ZIP, install its `requirements.txt`, and run:
