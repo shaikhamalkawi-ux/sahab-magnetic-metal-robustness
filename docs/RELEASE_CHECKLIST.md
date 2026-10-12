@@ -8,7 +8,7 @@
 - [x] Source crosswalk and explicit Zagreb CC BY 4.0 attribution included.
 - [x] Existing Sahab 48 / Amman 44 CSVs, split outputs, code and optional reduced ZIP preserved.
 - [x] Public README, release README, checksums, release-status record and journal Data Availability draft synchronized to the restored default archive.
-- [ ] A **new, independent** clean-environment verification run after restoration (historical V34 full checks already passed; do not mislabel the historical audit as newly executed).
+- [x] Executed new public [clean-environment verification](PORTABILITY_AUDIT_20261012.md): exact ZIP checksum PASS, 54/54 file manifest PASS, 80/80 optimizer PASS (max 6.99e-15), and 16,000 held-out split records numerically reproduced (max 9.05e-15). The original strict CSV byte replay FAILED with newer numerical libraries; this difference is documented, not concealed.
 - [ ] Independently reconcile the Amman sample-8 definition difference if source equivalence is later claimed; no change to locked V34 without demonstrated error.
 
 ## Journal production — still separate from GitHub publication
