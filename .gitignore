@@ -1,0 +1,17 @@
+# Local and temporary files (public research data are *not* excluded by default)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+tmp/
+temp/
+build/
+dist/
