@@ -1,28 +1,20 @@
-# Sahab V34 full executable reproducibility archive — GitHub only
+# Sahab V34 public release — Zagreb results only
 
-This archive contains the **full V34 reproducibility inputs, code, source-reconciliation ledger, split-level outputs, and numerical verification** for the historical Sahab / Amman–Airport / Zagreb study. It is distinct from the smaller [public-method example](../public_method/).
+[Download updated ZIP](Sahab_V34_ResearchData_ResultsOnlyZagreb_20261012.zip)
 
-**Release file:** [Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip](Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip)
+SHA-256: `e65d2485eea6cd87a557e0223dc72f044d7f6bd60efaad02b9c32627704d6a9d`; 2,161,434 bytes, 55 ZIP entries (54 payloads verified against its embedded SHA-256 manifest).
 
-**Size:** 2,155,168 bytes · **SHA-256:** `4971969d21f1ba09741e2551eba952a21ef2bb1d4cd33334066e45cb7e73cb95`
+Included: Sahab 48-row analytic data, Amman–Airport 44-row analytic data, source reconciliation workbook, original V34 code, frozen numerical and split-level outputs for all three studies, including **Zagreb derived results**.
 
-**Contents:** 55 entries, including 54 file payloads and SHA-256 manifest. The archive retains original data and computational results; it excludes confidential peer-review notices, machine `__pycache__` artifacts, unpublished source PDFs, passwords and internal manuscript packaging.
+**Excluded:** Zagreb's 25-site original measurement/transcription table. Its direct GitHub CSV and both copies formerly in the ZIP were removed from the current branch. Consult Frančišković-Bilinski et al. (2023), *Minerals* 13, 1481, DOI 10.3390/min13121481 for independently sourced data.
 
-Study inputs: Sahab (48 primary reconciled records from 56 historical rows; 54 identities resolved), Amman–Airport (44), and Zagreb (25 matched surface sites). **Sahab n=48 is not the complete historical n=56 archive.** Original V34 inputs remain locked.
-
-### Reproduce
-
-Extract the ZIP, install `requirements.txt`, and run:
-
-```bash
-PYTHONDONTWRITEBYTECODE=1 python code/verify_v34.py
+To verify the included files after extraction:
+```sh
+python -m pip install -r requirements.txt
 python verify_release.py
+PYTHONDONTWRITEBYTECODE=1 python code/verify_public_sahab_amman.py
 ```
 
-The archive was independently replayed in a fresh working copy on Python 3.13, obtaining 80/80 SLSQP checks, maximum absolute numerical difference `7.327471962526033e-15`, 5/5 primary split-output byte replay, and 54/54 manifest PASS. The original V34 science and labels have not been altered.
+Public-only tests: 40/40 SLSQP comparisons; four N4/N5 Sahab/Amman held-out split CSVs reproduce byte-for-byte. Full three-study computation cannot be replayed without Zagreb inputs. Original 80-SLSQP check results remain historical verification of the internal archive before source-data withdrawal.
 
-**Source and rights:** See `docs/SOURCE_RIGHTS_AND_CROSSWALK.md` inside the archive. The depositor reports coauthor consent to public availability; source-specific copyright and reuse permissions remain distinct. Zagreb adaptation is attributed to a CC BY 4.0 publication. Do not infer a blanket license on every original record.
-
-**Amman sample-8 note:** Frozen V34 `Fine_LF=246.05` differs from about `224.390243902439` in a separate public Amman reconstructed master; the archived source-definition difference is documented and not silently reconciled.
-
-**Publication:** No article acceptance is claimed. GitHub is the publication location *now*. Zenodo will be considered only after journal acceptance.
+No scientific result was changed. GitHub only before journal acceptance; no Sahab Zenodo DOI has been created. Git commit history may still retain the previously shared source data.
