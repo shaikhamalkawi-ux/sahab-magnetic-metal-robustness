@@ -1,5 +1,7 @@
 # Data-source, authorization, and sample-definition crosswalk
 
+**Public release update (12 October 2026): The Zagreb 25-site numerical observations are NOT distributed through the current public GitHub files or replacement ZIP. Only derived Zagreb statistics and computation code are included.** Earlier public copies were withdrawn from the current branch; Git history and previously downloaded copies may remain accessible.
+
 This document applies to the **GitHub-only** V34 reproducibility deposit. The manuscript authors have been reported by the corresponding author as consenting to this public availability. No documentation of a separate publisher-granted or university-granted reuse licence has been supplied to this audit. Public files are not automatically released under a new blanket licence; dataset-specific legal rights and source attribution remain in force.
 
 ## Sahab
@@ -21,7 +23,7 @@ Sahab full magnetic study: 56; 54 resolved chemistry identities; 48 in the ±0.1
 - Different extracted chemistry display precision in the sources can lead to small per-component rounding differences.
 
 ## Zagreb
-Frančišković-Bilinski, S.; Peco, J.; Sakan, S.; Đorđević, D.; Inđić, D. (2023). *Magnetic and geochemical properties of Zagreb city area soils*. *Minerals* 13(12), 1481. https://doi.org/10.3390/min13121481 . Source article: **CC BY 4.0**, attribution and indication of table adaptation required. The CSV joins reported Table 10 chemistry with Appendix A field/lab readings for 25 matched *surface* sites; two deeper chemical rows are excluded from the matched surface analysis. These are source-derived published measurements, not independent new measurements.
+Frančišković-Bilinski, S.; Peco, J.; Sakan, S.; Đorđević, D.; Inđić, D. (2023). *Magnetic and geochemical properties of Zagreb city area soils*. *Minerals* 13(12), 1481. https://doi.org/10.3390/min13121481 . Source article: **CC BY 4.0**, attribution and indication of table adaptation required. The ORIGINAL V34 analysis joined Table 10 chemistry and Appendix A magnetic readings for 25 matched *surface* sites, excluding two deeper-layer rows. This joined numeric table is **not** part of the revised public release. These are source-derived published measurements, not independent new measurements.
 
 ## Data-license limits
 - No blanket MIT licence is attached to third-party historical measurements.
