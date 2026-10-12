@@ -20,3 +20,7 @@ Additional exploratory scripts (see their `--help` for arguments where provided)
 - `code/run_v34_simulation.py` — 4 controlled methodological simulations; not field validation.
 
 `results/` includes the original 2000 split-level outputs per family and the controlled simulation replicate summaries. Outputs are deterministic for the original implementation and seed choices. Changes to original files invalidate release hashes.
+
+## Cross-environment check after full-public restoration (12 October 2026)
+
+The [public workflow](../../.github/workflows/verify-v34.yml) checked the unchanged full ZIP and 54/54 manifest and executed a [secondary numeric replay](../../docs/PORTABILITY_AUDIT_20261012.md) under Python 3.13.16, NumPy 2.5.4, SciPy 1.18.1, pandas 3.0.6: 80/80 independent checks PASS, max 6.99e-15; 16,000 split records numerically reproduced, max 9.05e-15. The original strict byte parity check FAILED in this newer environment because of serialization/floating-point changes; it remains an environment-specific diagnostic, not evidence of changed science. No original ZIP contents, code, or data were modified.
