@@ -1,71 +1,36 @@
-# Sahab Urban Soil Magnetic Susceptibility–Metal Robustness
+# Sahab Urban-Soil Magnetic–Metal Robustness
 
-**Repository for the reproducible scientific analysis**
+Reproducibility materials for **Robustness of Magnetic Susceptibility–Metal Associations to Iron Adjustment and Chemical Target Definition: Evidence from Sahab Urban Soils**.
 
-**Robustness of Magnetic Susceptibility–Metal Associations to Iron Adjustment and Chemical Target Definition: Evidence from Sahab Urban Soils**
+**Scientific baseline:** V34 (unchanged). **Target journal:** *Environments* (MDPI), not yet accepted. **Archiving policy:** GitHub now; Zenodo after journal acceptance.
 
-**Scientific baseline:** Sahab V34 (12 October 2026), unchanged.  
-**Target journal:** *Environments* (MDPI); manuscript acceptance or publication is **not** claimed.  
-**Current publication policy:** GitHub only. **Zenodo will be considered after journal acceptance**, as requested.
+## Latest public archive
 
-## Get the complete reproducibility package
+[Download updated Sahab / Amman data and Zagreb-results ZIP](release/Sahab_V34_ResearchData_ResultsOnlyZagreb_20261012.zip)
 
-**[Download full V34 data, code, ledger and results (ZIP)](release/Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip)**
+SHA-256: `e65d2485eea6cd87a557e0223dc72f044d7f6bd60efaad02b9c32627704d6a9d`.
 
-The [release directory](release/) also has a human-readable [release guide](release/README.md), [SHA-256 checksum](release/SHA256SUMS.txt), [direct CSV inputs](release/data/), [analysis scripts](release/code/), and selected [summary outputs](release/results/).
+**What is public:** source-reconciled Sahab analytic data (48 rows; 56 historical records and 54 resolved identities), Amman–Airport analytic data (44 rows), source reconciliation workbook, original code, and frozen results for all three studies, including **derived Zagreb statistical and held-out results**.
 
-**Archive:** 55 ZIP entries, 2,155,168 bytes, SHA-256 `4971969d21f1ba09741e2551eba952a21ef2bb1d4cd33334066e45cb7e73cb95`. Includes exact original V34 input values, scripts, full split-level outputs and the historical Sahab source-reconciliation workbook. The source-text and analysis outputs have not been retuned.
+**What is not public:** the 25-site Zagreb numerical observation table. The earlier direct Zagreb CSV and older full-data ZIP were withdrawn from the *current branch* at the depositor's request. The revised archive also omits both duplicate Zagreb input CSVs. The numerical conclusions have not changed.
 
-## Authorship
-
-1. Mahdi Salem Lataifeh
-2. Tayel Mahmoud El-Hasan
-3. Abdel-Jaleel Al-Nawiseh
-4. Ghassan Malkawi — corresponding author
-5. Ahmed Elsayed
-
-## Studies and scope
-
-| Dataset | Observations in analysis | Role |
-| --- | ---: | --- |
-| Sahab, Jordan | **48** principal reconstructed rows | Historical magnetic/chemical association and source reconciliation; 56 magnetic rows historically, 54 identities resolved |
-| Amman–Airport, Jordan | **44** | Separate comparison; chemical extraction and magnetic protocol differ |
-| Zagreb, Croatia | **25** matched surface sites | Published-source field/laboratory comparison at a common chemical target |
-
-The nonnegative metal families are N4 = {Mn, Cu, Ni, Zn} and N5 = N4 plus Pb (the latter retains historical non-detect sensitivity). Studies are not pooled.
-
-### Locked V34 outcomes
-
-- Sahab N4 Fe-adjusted recorded-sample upper endpoint: `0.0384271762`.
-- Sahab median held-out correlation with training-optimized weights: `-0.1382145` across 2,000 repeated random held-out splits.
-- Corresponding N4 held-out medians: Amman–Airport `0.7499465`; Zagreb field `0.8191714`.
-- Sample-selection and weight-domain calculations are retrospective/exploratory, **not** spatial/prospective validation, population-level bounds, contamination-class diagnosis, causal Fe-source apportionment, or instrument superiority.
+Original Zagreb source: Frančišković-Bilinski et al. (2023), *Minerals* 13, 1481, https://doi.org/10.3390/min13121481. Consult its Table 10 and Appendix A to independently reconstruct the paired source values. The full Zagreb numerical replay requires separately obtained observations; it cannot be run from the public ZIP alone.
 
 ## Reproduction
 
-Download and extract the **complete ZIP**, not just the browsable subset:
+Extract the ZIP, install `requirements.txt`, and run:
 
-```bash
-python -m pip install -r requirements.txt
-PYTHONDONTWRITEBYTECODE=1 python code/verify_v34.py
+```sh
 python verify_release.py
+PYTHONDONTWRITEBYTECODE=1 python code/verify_public_sahab_amman.py
 ```
 
-On the recovered archive, the verification produced **80/80 independent SLSQP checks**, maximum absolute difference `7.327471962526033e-15`, **5/5 primary held-out output byte replay**, and **54/54** post-execution SHA-256 manifest checks.
+The updated public verification passes 40 Sahab/Amman SLSQP tests and reproduces four original 2,000-split CSVs byte-for-byte. The **historical complete V34** 80-test verifier previously passed on the original internal archive, before Zagreb's row-level data were withheld. Original outcomes remain locked. Do not claim complete three-study replay from this public package alone.
 
-The smaller [public_method/](public_method/) directory is retained as a self-contained Zagreb and simulation demonstration with original source-file hashes. The full package supplies Sahab and Amman inputs and broader executed V34 analyses.
+Primary held-out medians: Sahab N4 −0.1382145; Amman N4 0.7499465; Zagreb field N4 0.8191714. These are retrospective sample-selection diagnostics, not prospective or spatial validation.
 
-## Provenance, rights and limits
+**Authors:** Mahdi Salem Lataifeh; Tayel Mahmoud El-Hasan; Abdel-Jaleel Al-Nawiseh; Ghassan Malkawi (corresponding); Ahmed Elsayed.
 
-The depositor confirms that the manuscript coauthors approve public research-data availability. Original datasets must still be cited, and source-dependent legal rights and reuse licenses are distinct from coauthor manuscript approval. This repository **does not claim a new blanket CC BY 4.0 or MIT grant over every source-derived file**. See [data provenance and reuse notes](release/docs/SOURCE_RIGHTS_AND_CROSSWALK.md).
+For release scope and provenance, see [release information](release/README.md) and [original-source guidance](release/docs/SOURCE_RIGHTS_AND_CROSSWALK.md). Amman sample 8 retains the original V34 input difference from a separate previously published Amman master; no data were silently replaced.
 
-The Zagreb source is published under CC BY 4.0: Frančišković-Bilinski et al. (2023), *Minerals* 13, 1481. [DOI 10.3390/min13121481](https://doi.org/10.3390/min13121481). Amman–Airport has [a separate archived reproducibility source](https://github.com/shaikhamalkawi-ux/amman-airport-magnetic-screening); **sample ID 8 has a documented input-definition difference** from V34, so the two masters should not be silently interchanged.
-
-No Sahab GitHub-release DOI has been issued. The repository publication is intended for reproducibility before journal submission; Zenodo deposition is postponed until acceptance.
-
-## Original survey sources
-
-- El-Hasan, T. (2002). *Urban geochemistry: Heavy metals distribution on the soils of relatively heavy industrial city of Sahab, central Jordan*. *Mu’tah Lil-Buhuth wad-Dirasat, Pure Sciences*, 17(3), 49–67.
-- El-Hasan, T.; Al-Nawiseh, A.-J.; Lataifeh, M. S. (2009). *Environmental magnetism: Heavy metal concentrations in soils as a function of magnetic materials content*. *Jordan Journal of Earth and Environmental Sciences*, 2 (Special Publication No. 1), 38–49.
-- Al-Gharram, M. S. S. (2022). *Measurement of magnetic susceptibility and heavy metals concentration in roadside topsoil along Amman–Airport Highway, Jordan*. Master’s thesis, Yarmouk University.
-- Frančišković-Bilinski et al. (2023). *Magnetic and geochemical properties of Zagreb city area soils*. *Minerals* 13, 1481.
+**History limitation:** deleting files from the current GitHub branch does not erase older commits, clones, downloaded archives or caches. Previous Zagreb data availability cannot be retroactively undone merely by this update. No Sahab Zenodo DOI is assigned.
