@@ -1,19 +1,13 @@
-# Dataset inventory — pending upload
+# Sahab V34 — Data available in GitHub
 
-**A public Zagreb sample-level CSV is now available in [`public_method/data/Zagreb25_primary.csv`](../public_method/data/Zagreb25_primary.csv), together with the generic engine and simulation results.** No Sahab or Amman sample-level analytic CSV has yet been released into this repository. The table below is the inventory for the eventual full release.
+The [complete reproducibility archive](../release/Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip) contains all V34 analysis inputs, software, full split-level outputs, and the Sahab reconciliation ledger. The three primary CSVs are also directly browsable in [release/data/](../release/data/):
 
-| Data source | Study role | Observation count |
-| --- | --- | ---: |
-| Sahab 2002 chemistry + 2009 magnetic archive | Historical source reconciliation and principal analysis | 56 original, 54 resolved, 48 principal |
-| Amman–Airport published thesis-derived data | Separate N4/N5 comparison | 44 |
-| Zagreb 2023 published chemical + field/laboratory measurements | Separate matched-site application | 25 surface sites |
+- [Sahab48_primary.csv](../release/data/Sahab48_primary.csv) — 48 retained source-reconciled paired observations from the historical Sahab archive (56 original magnetic records, 54 IDs resolved).
+- [Amman44_primary.csv](../release/data/Amman44_primary.csv) — 44 separate Amman–Airport records, original V34 analysis input.
+- [Zagreb25_primary.csv](../release/data/Zagreb25_primary.csv) — 25 matched surface locations, an attributed adaptation of published data under CC BY 4.0.
 
-When the original V34 archives become available and pass rights/hash checks, the release should include:
+The original files are hash-locked. Do not substitute a separate reconstructed Amman source or impute missing/censored metals to force equivalence with other records.
 
-- **Sahab**: input records and the row-level reconciliation ledger with excluded/unresolved identities explicitly flagged; never silently force-match the unresolved records.
-- **Amman–Airport**: admitted matched chemical and low-frequency magnetic input records.
-- **Zagreb**: adapted published-table numeric transcription, source citation, CC BY 4.0 attribution and change notice.
-- **Results**: frozen full-sample intervals, endpoint witnesses, 2,000 repeated held-out split diagnostics, source/tolerance sensitivity, and controlled simulation outputs.
-- **Reproduction**: input hashes, exact code and dependencies, independent verification and manifest checks.
+The full ZIP also includes the row-level Sahab reconciliation workbook `evidence/Sahab_DataRecovery_and_Reconciliation.xlsx` and original verification. The primary Sahab CSV is **not** a complete newly measured 56-row dataset.
 
-The original V34 inputs must be copied *exactly* from the verified archives. No new data, imaginary detection limits, inferred chemical concentrations, or synthetic placeholders may be substituted.
+See [source rights and sample-definition crosswalk](../release/docs/SOURCE_RIGHTS_AND_CROSSWALK.md) for provenance, source-specific reuse conditions, and the known sample-8 Amman input difference.
