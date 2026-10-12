@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the source publications and, once available, the verified Sahab V34 reproducibility release."
+title: "Sahab Magnetic Susceptibility–Metal Robustness: Reproducibility Materials"
+type: software
+authors:
+  - given-names: "Mahdi Salem"
+    family-names: "Lataifeh"
+  - given-names: "Tayel Mahmoud"
+    family-names: "El-Hasan"
+  - given-names: "Abdel-Jaleel"
+    family-names: "Al-Nawiseh"
+  - given-names: "Ghassan"
+    family-names: "Malkawi"
+  - given-names: "Ahmed"
+    family-names: "Elsayed"
+repository-code: "https://github.com/shaikhamalkawi-ux/sahab-magnetic-metal-robustness"
+keywords:
+  - environmental magnetism
+  - urban soil
+  - iron adjustment
+  - metal target definition
+  - reproducibility
+  - held-out stability
