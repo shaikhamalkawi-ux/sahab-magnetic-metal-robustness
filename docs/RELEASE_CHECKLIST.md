@@ -1,3 +1,9 @@
+# Distribution update — Zagreb source data withheld
+
+The public GitHub release has been replaced by a version that does **not** redistribute Zagreb's 25-site chemical/magnetic observation table. Derived Zagreb statistics remain. Original Sahab/Amman analytic inputs remain public. Full cross-study replay needs readers to source Zagreb measurements independently. Public subset checks: 40/40 SLSQP and four 2,000-split output comparisons. **Earlier checklist statements about publishing Zagreb CSVs have been superseded.** No scientific result was changed. Zenodo remains postponed.
+
+---
+
 # Sahab V34 — GitHub publication status
 
 **Full reproducibility archive is PUBLIC on GitHub** under [release/](../release/). Zenodo is explicitly deferred until the article is accepted.
