@@ -1,3 +1,9 @@
+# UPDATED DISTRIBUTION SCOPE — Zagreb results only
+
+The earlier statements below describe the initial V34 publication and are superseded **only as to public Zagreb source-data availability**. Both Zagreb observation CSV paths and the earlier full-data ZIP have been removed from the current GitHub branch. Replacement: `release/Sahab_V34_ResearchData_ResultsOnlyZagreb_20261012.zip`, SHA-256 `e65d2485eea6cd87a557e0223dc72f044d7f6bd60efaad02b9c32627704d6a9d`. This carries Sahab/Amman raw analytic CSVs, source reconciliation and unchanged derived Zagreb results, but **not** Zagreb's observations. New public verification: 40 Sahab/Amman SLSQP checks and 4 split-output replays; original full 80-check internal audit was done before withdrawal and is not publicly replayable without independently sourcing Zagreb data. Older Git history/downloads may still contain earlier files.
+
+---
+
 # Sahab V34 — Verified recovery and public release boundary
 
 **Record date:** 12 October 2026. **Scientific baseline:** V34, unchanged.
