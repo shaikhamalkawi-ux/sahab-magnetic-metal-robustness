@@ -1,6 +1,6 @@
 # Dataset inventory — pending upload
 
-**No analytical CSV has yet been uploaded to this repository.** The following is a publication inventory, not a representation that these files are already provided.
+**A public Zagreb sample-level CSV is now available in [`public_method/data/Zagreb25_primary.csv`](../public_method/data/Zagreb25_primary.csv), together with the generic engine and simulation results.** No Sahab or Amman sample-level analytic CSV has yet been released into this repository. The table below is the inventory for the eventual full release.
 
 | Data source | Study role | Observation count |
 | --- | --- | ---: |
