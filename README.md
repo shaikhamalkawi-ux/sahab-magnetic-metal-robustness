@@ -6,7 +6,7 @@ Reproducibility repository for the manuscript:
 
 **Research baseline:** Sahab V34 (12 October 2026)  
 **Target journal:** *Environments* (MDPI)  
-**Release status:** **PREPARATION — complete verified datasets and executable analysis have NOT been deposited here yet.** This repository is not yet the final research archive.
+**Release status:** **PARTIAL PUBLIC METHOD RELEASE — the original V34 Zagreb example, generic algorithm, controlled simulation, and frozen simulation results are available and hash-verified under `public_method/`. Sahab/Amman analytic rows and the full V34 workflow are not publicly deposited here.** This repository is not yet the complete research archive.
 
 ## Authors
 
@@ -35,7 +35,7 @@ This retrospective analysis examines how Fe adjustment and the chemical target d
 
 ## Data and software status
 
-**Not yet released here:** sample-level Sahab/Amman records, the source-reconciliation ledger, the validated Zagreb CSV, computational pipeline, and V34 split-level outputs.
+**Already released and verified:** [public_method/](public_method/) contains the 25-site Zagreb numeric transcription (published source: CC BY 4.0), exact V34 generic target-family engine, four-scenario simulation code, `requirements.txt`, 4,000 simulation-replicate rows, and frozen simulation summary. Each of the seven uploaded source files has a Git blob SHA matching the original V34 archive, and the simulation was replayed byte-for-byte. **Not yet publicly released:** Sahab/Amman input records, historical reconciliation ledger, complete held-out split-level files, and the full reviewer-only pipeline.
 
 The archived V34 inputs and code must first be checked against their original file hashes and frozen numerical outputs. Historical source-specific public redistribution and license terms must be documented before the records are pushed. The authors' stated approval does not automatically set the license for third-party source-derived observations. This repository will **not** use guessed input data, synthetic substitutes, or unverified run commands to fill gaps.
 
