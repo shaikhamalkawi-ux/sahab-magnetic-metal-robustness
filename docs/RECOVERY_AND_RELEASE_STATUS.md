@@ -27,6 +27,8 @@ The following seven files were copied from the existing V34 public-safe ZIP into
 - `public_method/results/simulation_replicates.csv`
 - `public_method/results/simulation_summary.json`
 
+Additionally, `public_method/results/V34_Derived_Summary.csv` was copied byte-identically from `Research_Analysis/V34_Derived_Summary.csv` in the recovered V34 parent archive. It contains source-excluded aggregate statistics, not sample-level Sahab or Amman inputs.
+
 From the `public_method/` directory, the original source README documents the executable Zagreb and simulation commands. Do not label the simulation as measured environmental data.
 
 ## Provenance and copyright boundary
@@ -37,7 +39,7 @@ The 25 Zagreb matched-site observations are adapted from:
 
 The historical source-derived Sahab and Amman–Airport analytic inputs and reconciliation ledger remain omitted from this public repository. All five current manuscript authors have reportedly consented to publication; before re-releasing the archival source-derived sample rows as CC BY 4.0, confirm that the appropriate underlying source holders have authority to grant this public reuse license. Source-data approval and source-specific licensing are distinct from coauthor approval of the paper.
 
-A prior separately maintained Amman–Airport reproducibility repository already contains a CC BY 4.0 statement for author-owned archived data and a citable archive (https://doi.org/10.5281/zenodo.22973207). However, its independently reconstructed `Fine_LF_reconstructed` field is **not identical** to the locked V34 `Fine_LF` input for every row. In particular, sample ID 8 is `246.05` in V34 and approximately `224.390243902439` in that public reconstructed master, due to the latter's documented alternative adopted mass rule. This source-definition discrepancy requires attribution/audit before claiming these two CSVs are interchangeable. The V34 value and scientific outputs have **not** been changed.
+A prior separately maintained Amman–Airport reproducibility repository already contains a CC BY 4.0 statement for author-owned archived data and a citable archive (https://doi.org/10.5281/zenodo.22973207). However, its independently reconstructed `Fine_LF_reconstructed` field is **not identical** to the locked V34 `Fine_LF` input for every row. In particular, sample ID 8 is `246.05` in V34 and approximately `224.390243902439` in that public reconstructed master, while the public master explicitly documents an alternative adopted fine-mass rule for sample 8. This source-definition discrepancy requires attribution/audit before claiming these two CSVs are interchangeable. The V34 value and scientific outputs have **not** been changed.
 
 ## Claim boundaries
 
