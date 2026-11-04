@@ -2,7 +2,12 @@
 
 Research archive for **Robustness of Magnetic Susceptibility–Metal Associations to Iron Adjustment and Chemical Target Definition: Evidence from Sahab Urban Soils**.
 
-**Scientific baseline:** V34; unchanged. **Target journal:** *Environments* (MDPI); the article has not been submitted or accepted. **Archiving policy:** GitHub now, Zenodo only following manuscript acceptance.
+**Scientific baseline:** V34 remains numerically unchanged. **Current manuscript preparation:** *Environments* (MDPI), S8 journal-format revision (November 2026), **not submitted or accepted**. The earlier Springer EMAS S7A remains an independent preserved submission-format version. **Archiving policy:** maintain the already-public GitHub reproducibility materials; defer any Sahab Zenodo record/DOI until after acceptance.
+
+
+## 2026 manuscript-format update (S8)
+
+The *Environments* S8 manuscript reformats the existing Sahab analysis to the journal layout and retains the locked numerical results, underlying data, interpretations, and 43 cited references. This is an **editorial/template change**, not a new dataset or independently replicated field study. The current draft has seven approved listed authors, with Haroun Albarghouthy as corresponding author. See [S8 manuscript/repository alignment](docs/S8_MANUSCRIPT_REPOSITORY_ALIGNMENT_20261105.md). The source-linked **V34** reproducibility archive above remains the public computational record; no new GitHub data release, publication DOI, or journal submission is implied by this notice.
 
 ## Primary public reproducibility archive
 
@@ -43,7 +48,9 @@ The Zagreb 25-site numerical table is derived from Frančišković-Bilinski, S.;
 
 The frozen Amman sample-8 `Fine_LF=246.05` differs from a separate public source reconstruction (about `224.390243902439`). This unresolved definition difference is documented; no values were silently substituted.
 
-**Authors (confirmed order):** Mahdi Salem Lataifeh; Tayel Mahmoud El-Hasan; Abdel-Jaleel Al-Nawiseh; Ghassan Malkawi (corresponding); Ahmed Elsayed.
+**Current manuscript authors (S8, approved order):** Mahdi Salem Lataifeh; Tayel Mahmoud El-Hasan; Ghassan Malkawi; Abdel-Jaleel Al-Nawiseh; Ahmed Elsayed; Haroun Albarghouthy (**corresponding author**); Mohammad Afzaal.
+
+**Archive citation distinction:** `CITATION.cff` documents the earlier frozen V34 software-archive attribution and should not be mistaken for the seven-author S8 manuscript byline. Reconcile final repository citation metadata with the accepted manuscript when depositing a versioned Zenodo record.
 
 [Journal Data Availability wording](docs/JOURNAL_DATA_AVAILABILITY_DRAFT.md) | [Historical release audit](docs/RECOVERY_AND_RELEASE_STATUS.md) | [Release guide](release/README.md).
 
