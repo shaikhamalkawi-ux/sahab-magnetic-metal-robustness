@@ -1,6 +1,6 @@
-# Sahab S8R1 — public code/data map for manuscript reviewers
+# Sahab V34 — public code/data map (original S8R1; applies to current S15 manuscript)
 
-**Status (5 November 2026):** Public data/code guidance for the seven-author *Environments* S8R1 manuscript. **Not a new research data release, preprint, submitted article, or Zenodo deposit.** Computations remain frozen as Sahab **V34**. S8R1 corrects two obsolete internal-version names only, after the S8 MDPI layout adaptation.
+**Status (5 November 2026):** Public data/code guidance originally compiled for S8R1 and still applicable to the unchanged V34 scientific results in the current S15 *Environments* author-review manuscript. **Not a new research data release, preprint, submitted article, or Zenodo deposit.** Computations remain frozen as Sahab **V34**. S8R1 corrects two obsolete internal-version names only, after the S8 MDPI layout adaptation.
 
 ## Reproduce the underlying analysis, not the typeset article
 
@@ -28,6 +28,6 @@ All public file paths above refer to the existing V34 release. The manuscript's 
 
 The study does not demonstrate contemporary Sahab contamination, causal source attribution, independent spatial generalization, calibrated uncertainty from overlapping resplits, absolute contamination rankings, superiority of one Zagreb instrument, or an implemented fuzzy-systems algorithm. The four Malkawi-related fuzzy publications remain cited as relevant mathematical background/future directions, not as executed experimental procedures.
 
-The public repository's historical [`CITATION.cff`](../CITATION.cff) documents an earlier **V34 research-software archive**, not the current seven-author manuscript. The author-approved journal manuscript lists Mahdi Salem Lataifeh; Tayel Mahmoud El-Hasan; Ghassan Malkawi; Abdel-Jaleel Al-Nawiseh; Ahmed Elsayed; Haroun Albarghouthy (**corresponding**); and Mohammad Afzaal. The accepted-article bibliographic metadata, DOI, title, and publication venue must **not** be fabricated or entered before publication.
+The public repository's historical [`CITATION.cff`](../CITATION.cff) documents an earlier **V34 research-software archive**, not the current seven-author manuscript. The current S15 author-review manuscript lists Mahdi Salem Lataifeh; Tayel El-Hasan; Ghassan Malkawi; Abdel-Jaleel Al-Nawiseh; Marianne Tarun (fifth-listed corresponding author); Ahmed Elsayed; and Mohammad Afzaal. Coauthor approval of author order and roles remains a presubmission requirement. See [current author metadata](CURRENT_MANUSCRIPT_AUTHOR_METADATA_S15_20261105.md). The accepted-article bibliographic metadata, DOI, title, and publication venue must **not** be fabricated or entered before publication.
 
 No Sahab Zenodo DOI has been registered. Defer any Zenodo deposit/release freeze to after the article is accepted, and validate provenance, licensing, included files, citation metadata and exact hashes at that time.
