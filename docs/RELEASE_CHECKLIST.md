@@ -11,14 +11,19 @@
 - [x] Executed new public [clean-environment verification](PORTABILITY_AUDIT_20261012.md): exact ZIP checksum PASS, 54/54 file manifest PASS, 80/80 optimizer PASS (max 6.99e-15), and 16,000 held-out split records numerically reproduced (max 9.05e-15). The original strict CSV byte replay FAILED with newer numerical libraries; this difference is documented, not concealed.
 - [ ] Independently reconcile the Amman sample-8 definition difference if source equivalence is later claimed; no change to locked V34 without demonstrated error.
 
-## Journal production — still separate from GitHub publication
+## Journal production — current status, 5 November 2026
 
-- [ ] Replace the old Zagreb-results-only Data Availability statement in the manuscript with [the current draft](JOURNAL_DATA_AVAILABILITY_DRAFT.md).
-- [ ] Replace matching Zagreb-withheld descriptions in the supplement and any journal cover metadata.
-- [ ] Update Abdel-Jaleel Al-Nawiseh's author contact using the user-supplied address, **after confirming his preferred publication address**. His institution remains the historically documented affiliation unless a current affiliation is separately verified.
-- [ ] Compile and inspect Main PDF (19 pages historically), Supplement PDF (12 pages historically), combined PDF and clean Overleaf source; verify figure/table placement, references and author declarations.
-- [x] Corresponding author reported coauthor approval, non-simultaneous submission, HCT APC support, and data-release permission subject to underlying source rights. These are user-confirmed, not independently verified documents.
-- [ ] Do not submit without the user's explicit submission instruction.
-- [ ] Zenodo record/DOI only *after acceptance*. No placeholder DOI.
+- [x] S8R1 *Environments* manuscript includes the full public GitHub Data Availability statement; Zagreb 25-site provenance/licence and Amman sample-8 definition boundary are retained.
+- [x] Main manuscript and Supplementary Materials compiled with the MDPI `environments` class from the archived template; **24 pages + 16 pages**, seven authors, 43 bibliography entries.
+- [x] Four Malkawi-related cited references preserved, and two obsolete internal S3 archive labels removed in S8R1.
+- [x] Independent editable-source/PDF compilation checks completed for these minor S8R1 editorial changes; no numerical/model result updates.
+- [x] Earlier five-author public-repository README author metadata updated to match the seven-author S8R1 manuscript, with Haroun Albarghouthy corresponding.
+- [x] Public GitHub V34 reproducibility package and its checksum preserved; `CITATION.cff` remains a historical V34 archive attribution rather than an S8R1 manuscript author declaration.
+- [ ] Independently reconcile the Amman sample-8 input-definition discrepancy **only if a future claim of source equivalence is proposed**.
+- [ ] Check the current MDPI production template and confirm any new portal-required metadata at submission; do not make up affiliations, ORCIDs or contact details.
+- [ ] Corresponding author to review MDPI-generated proof before final submission; no current journal submission is claimed.
+- [ ] After acceptance, review the final public archive, rights, authorship/citation fields, and release record before Zenodo deposition. **No DOI placeholder**.
 
-Refer to [complete source and rights note](../release/docs/SOURCE_RIGHTS_AND_CROSSWALK.md).
+Historical earlier release checklists referred to a 19-page main manuscript, a 12-page supplement, older correspondent details, or Zagreb inputs withheld; those were superseded by the subsequent S7A/S8/S8R1 manuscript versions.
+
+See [current S8R1 archive map](S8_REPRODUCIBILITY_MAP_20261105.md) and the [source and rights note](../release/docs/SOURCE_RIGHTS_AND_CROSSWALK.md).
