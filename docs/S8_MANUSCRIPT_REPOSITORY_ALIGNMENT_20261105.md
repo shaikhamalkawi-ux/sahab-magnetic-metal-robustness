@@ -1,13 +1,13 @@
-# Sahab S8 manuscript and the public V34 reproducibility archive
+# Sahab historical S8/S8R1 manuscript and the public V34 reproducibility archive
 
-**Recorded 5 November 2026.** This is public repository metadata only; it is not a manuscript submission, a preprint release, or a Zenodo deposit.
+**Historical S8/S8R1 snapshot recorded 5 November 2026; superseded for active manuscript authorship by [S15 author metadata](CURRENT_MANUSCRIPT_AUTHOR_METADATA_S15_20261105.md).** This is public repository metadata only; it is not a manuscript submission, a preprint release, or a Zenodo deposit.
 
-## Current manuscript
+## Historical S8 manuscript (not current byline)
 
 - Working journal: *Environments* (MDPI), **not submitted** as of the recorded update.
 - Submission-format baseline: **S8**, derived from frozen Springer-format **S7A** through documented journal layout and limited English editorial changes.
-- Manuscript authors, in the S8 title-page order: Mahdi Salem Lataifeh; Tayel Mahmoud El-Hasan; Ghassan Malkawi; Abdel-Jaleel Al-Nawiseh; Ahmed Elsayed; Haroun Albarghouthy; Mohammad Afzaal.
-- Corresponding author: **Haroun Albarghouthy**.
+- The original S8 byline is preserved in the archived source/PDF and Git history; it is not the current author-review byline. Refer to the S15 metadata for current author names, order and contributions.
+- Current S15 corresponding author: **Marianne Tarun**, mtarun@hct.ac.ae (fifth-listed; approval of revised author metadata before submission remains required).
 - Current S8 document lengths: 24-page main manuscript and 16-page Supplementary Materials (layout-induced page counts).
 - The 43 bibliography entries were retained, including the four Malkawi-related publications requested by the authors. This notice does not reproduce or republish their copyrighted text.
 
