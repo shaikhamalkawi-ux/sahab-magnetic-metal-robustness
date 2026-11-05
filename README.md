@@ -2,12 +2,14 @@
 
 Research archive for **Robustness of Magnetic Susceptibility–Metal Associations to Iron Adjustment and Chemical Target Definition: Evidence from Sahab Urban Soils**.
 
-**Scientific baseline:** V34 remains numerically unchanged. **Current manuscript preparation:** *Environments* (MDPI), S8R1 editorial-reference revision (5 November 2026; source S8), **not submitted or accepted**. The earlier Springer EMAS S7A remains an independent preserved submission-format version. **Archiving policy:** maintain the already-public GitHub reproducibility materials; defer any Sahab Zenodo record/DOI until after acceptance.
+**Scientific baseline:** V34 scientific data/code and numerical results remain frozen and unchanged. **Current manuscript preparation:** *Environments* (MDPI) **S15 author-review version** (5 November 2026), **not submitted or accepted**. S15 follows S14 with byline, contribution and two small language/layout corrections; S8R1 and Springer EMAS S7A remain preserved historical versions. **Archiving policy:** retain the public V34 reproducibility archive and postpone any Sahab Zenodo record/DOI until after acceptance.
 
 
-## 2026 manuscript-format update (S8 / S8R1)
+## Current *Environments* author-review manuscript — S15
 
-The *Environments* S8R1 manuscript (after two non-scientific archive-name clarifications to S8) reformats the existing Sahab analysis to the journal layout and retains the locked numerical results, underlying data, interpretations, and 43 cited references. This is an **editorial/template change**, not a new dataset or independently replicated field study. The current draft has seven approved listed authors, with Haroun Albarghouthy as corresponding author. See [S8 manuscript/repository alignment](docs/S8_MANUSCRIPT_REPOSITORY_ALIGNMENT_20261105.md) and the [claim-to-reproduction map](docs/S8_REPRODUCIBILITY_MAP_20261105.md). The source-linked **V34** reproducibility archive above remains the public computational record; no new GitHub data release, publication DOI, or journal submission is implied by this notice.
+The current **S15** draft has seven listed authors in this order: **Mahdi Salem Lataifeh; Tayel El-Hasan; Ghassan Malkawi; Abdel-Jaleel Al-Nawiseh; Marianne Tarun (fifth-listed, corresponding author); Ahmed Elsayed; Mohammad Afzaal**. Corresponding-author contact: **mtarun@hct.ac.ae**. The author-requested contribution for Marianne Tarun is **validation: physical interpretation and magnetic-measurement consistency review**. The Tayel El-Hasan initials in the manuscript's CRediT statement are **T.E.-H.** The proposed author-review byline and contributions are **subject to the applicable coauthor approvals before submission**; no unanimous author consent is asserted here.
+
+S15 is an author-metadata and focused copyediting revision, not a new experiment, dataset, algorithm or independent field validation. It retains all **43 cited references**, including the four Malkawi-related works, and the unchanged **V34** data/code archive. The complete current article and its Supplementary Materials are held in the author's Google Drive review folder, not published as a GitHub preprint. See [current S15 author metadata](docs/CURRENT_MANUSCRIPT_AUTHOR_METADATA_S15_20261105.md), the [historical S8 alignment note](docs/S8_MANUSCRIPT_REPOSITORY_ALIGNMENT_20261105.md), and the [public claim-to-reproduction map](docs/S8_REPRODUCIBILITY_MAP_20261105.md). No submission, acceptance, new journal DOI or Sahab Zenodo deposit is claimed.
 
 ## Primary public reproducibility archive
 
@@ -48,9 +50,9 @@ The Zagreb 25-site numerical table is derived from Frančišković-Bilinski, S.;
 
 The frozen Amman sample-8 `Fine_LF=246.05` differs from a separate public source reconstruction (about `224.390243902439`). This unresolved definition difference is documented; no values were silently substituted.
 
-**Current manuscript authors (S8R1, approved order):** Mahdi Salem Lataifeh; Tayel Mahmoud El-Hasan; Ghassan Malkawi; Abdel-Jaleel Al-Nawiseh; Ahmed Elsayed; Haroun Albarghouthy (**corresponding author**); Mohammad Afzaal.
+**Current S15 manuscript byline (author-review; final coauthor approval pending):** Mahdi Salem Lataifeh; Tayel El-Hasan; Ghassan Malkawi; Abdel-Jaleel Al-Nawiseh; Marianne Tarun (**fifth-listed and corresponding**); Ahmed Elsayed; Mohammad Afzaal.
 
-**Archive citation distinction:** `CITATION.cff` documents the earlier frozen V34 software-archive attribution and should not be mistaken for the seven-author S8 manuscript byline. Reconcile final repository citation metadata with the accepted manuscript when depositing a versioned Zenodo record.
+**Archive citation distinction:** `CITATION.cff` documents the earlier frozen V34 software-archive attribution and should not be mistaken for the current S15 seven-author manuscript byline. Reconcile final repository citation metadata with the accepted manuscript when depositing a versioned Zenodo record.
 
 [Journal Data Availability wording](docs/JOURNAL_DATA_AVAILABILITY_DRAFT.md) | [Historical release audit](docs/RECOVERY_AND_RELEASE_STATUS.md) | [Release guide](release/README.md).
 
