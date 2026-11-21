@@ -1,0 +1,312 @@
+{
+  "provenance": {
+    "Sahab48_primary.csv": {
+      "git_blob_sha1": "6e7a7bf8092ec635a2e2177332005cae85445b12",
+      "sha256": "beac0556f26e2fad12269eabe570d80882974f91cbcadae630019a3b1e0cbd87",
+      "bytes": 4756
+    },
+    "Amman44_primary.csv": {
+      "git_blob_sha1": "81881e3d7d4596ea2fd1ce2be7295f9cd366e6d7",
+      "sha256": "39b880028f72b7c8e90f8dd0f8203c5cf3d83d485c7b1f1b7eec8ebd936e28f3",
+      "bytes": 2174
+    },
+    "Zagreb25_primary.csv": {
+      "git_blob_sha1": "d1a514bf037da9b8a62167b95e5839e466eb44a4",
+      "sha256": "ef8f0f17ee7b457b0b984ec01e9cabc40b7633099ba631d8cb38b2476614f278",
+      "bytes": 1288
+    }
+  },
+  "results": {
+    "Sahab": {
+      "n": 48,
+      "seed": 2026101201,
+      "n_splits": 2000,
+      "train_n": 32,
+      "test_n": 16,
+      "source_weights_replay_max_diff": 2.220446049250313e-16,
+      "source_equal_replay_max_diff": 9.71445146547012e-17,
+      "test_selected": {
+        "median": -0.13821453076290127,
+        "q025": -0.5411847734681641,
+        "q975": 0.3239845419755784
+      },
+      "test_SD": {
+        "median": 0.0044413178268909,
+        "q025": -0.474216556833465,
+        "q975": 0.4750334779314441
+      },
+      "selected_gt_equal_count": 499,
+      "selected_gt_equal_pct": 24.95,
+      "selected_gt_SD_count": 305,
+      "selected_gt_SD_pct": 15.25,
+      "background_support_counts": {
+        "1": 22,
+        "2": 129,
+        "3": 439,
+        "4": 738,
+        "5": 536,
+        "6": 136
+      },
+      "background_conditioned": {
+        "1": {
+          "eligible_splits": 2000,
+          "background_median": 0.022302968597464324,
+          "selected_gt_background_count": 221,
+          "selected_gt_background_pct": 11.05
+        },
+        "2": {
+          "eligible_splits": 1978,
+          "background_median": 0.024087585741512332,
+          "selected_gt_background_count": 218,
+          "selected_gt_background_pct": 11.02123356926188
+        },
+        "3": {
+          "eligible_splits": 1849,
+          "background_median": 0.028413678717927382,
+          "selected_gt_background_count": 201,
+          "selected_gt_background_pct": 10.870740941049215
+        }
+      }
+    },
+    "Amman": {
+      "n": 44,
+      "seed": 2026101203,
+      "n_splits": 2000,
+      "train_n": 29,
+      "test_n": 15,
+      "source_weights_replay_max_diff": 5.551115123125783e-16,
+      "source_equal_replay_max_diff": 9.71445146547012e-17,
+      "test_selected": {
+        "median": 0.7499464993369568,
+        "q025": 0.3989957026699688,
+        "q975": 0.9231984731062628
+      },
+      "test_SD": {
+        "median": 0.7604757497692263,
+        "q025": 0.5073119987843443,
+        "q975": 0.9237205279731591
+      },
+      "selected_gt_equal_count": 1886,
+      "selected_gt_equal_pct": 94.3,
+      "selected_gt_SD_count": 1049,
+      "selected_gt_SD_pct": 52.449999999999996
+    },
+    "Zagreb_field": {
+      "n": 25,
+      "seed": 2026101205,
+      "n_splits": 2000,
+      "train_n": 17,
+      "test_n": 8,
+      "source_weights_replay_max_diff": 1.887379141862766e-15,
+      "source_equal_replay_max_diff": 1.1102230246251565e-16,
+      "test_selected": {
+        "median": 0.8191714445948399,
+        "q025": 0.33508957643030196,
+        "q975": 0.9610443729571618
+      },
+      "test_SD": {
+        "median": 0.5939724822050338,
+        "q025": -0.028504388543227333,
+        "q975": 0.9028357141218442
+      },
+      "selected_gt_equal_count": 1453,
+      "selected_gt_equal_pct": 72.65,
+      "selected_gt_SD_count": 1822,
+      "selected_gt_SD_pct": 91.10000000000001
+    },
+    "Zagreb_lab": {
+      "n": 25,
+      "seed": 2026101207,
+      "n_splits": 2000,
+      "train_n": 17,
+      "test_n": 8,
+      "source_weights_replay_max_diff": 3.4139358007223564e-15,
+      "source_equal_replay_max_diff": 1.1102230246251565e-16,
+      "test_selected": {
+        "median": 0.6335838152625985,
+        "q025": 0.028979451769084976,
+        "q975": 0.9077819869771012
+      },
+      "test_SD": {
+        "median": 0.5613760041445044,
+        "q025": -0.07013436405490886,
+        "q975": 0.8626853718378267
+      },
+      "selected_gt_equal_count": 1254,
+      "selected_gt_equal_pct": 62.7,
+      "selected_gt_SD_count": 1332,
+      "selected_gt_SD_pct": 66.60000000000001
+    }
+  },
+  "verification": [
+    {
+      "dataset": "Sahab",
+      "metric": "test_SD_median",
+      "expected_paper": 0.004,
+      "replayed": 0.0044413178268909,
+      "tolerance": 0.0005,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "selected_gt_equal_pct",
+      "expected_paper": 24.95,
+      "replayed": 24.95,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "selected_gt_SD_pct",
+      "expected_paper": 15.25,
+      "replayed": 15.25,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "dataset": "Amman",
+      "metric": "test_SD_median",
+      "expected_paper": 0.76,
+      "replayed": 0.7604757497692263,
+      "tolerance": 0.0005,
+      "pass": true
+    },
+    {
+      "dataset": "Amman",
+      "metric": "selected_gt_equal_pct",
+      "expected_paper": 94.3,
+      "replayed": 94.3,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "dataset": "Amman",
+      "metric": "selected_gt_SD_pct",
+      "expected_paper": 52.45,
+      "replayed": 52.449999999999996,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "dataset": "Zagreb_field",
+      "metric": "test_SD_median",
+      "expected_paper": 0.594,
+      "replayed": 0.5939724822050338,
+      "tolerance": 0.0005,
+      "pass": true
+    },
+    {
+      "dataset": "Zagreb_field",
+      "metric": "selected_gt_equal_pct",
+      "expected_paper": 72.65,
+      "replayed": 72.65,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "dataset": "Zagreb_field",
+      "metric": "selected_gt_SD_pct",
+      "expected_paper": 91.1,
+      "replayed": 91.10000000000001,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "dataset": "Zagreb_lab",
+      "metric": "test_SD_median",
+      "expected_paper": 0.561,
+      "replayed": 0.5613760041445044,
+      "tolerance": 0.0005,
+      "pass": true
+    },
+    {
+      "dataset": "Zagreb_lab",
+      "metric": "selected_gt_equal_pct",
+      "expected_paper": 62.7,
+      "replayed": 62.7,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "dataset": "Zagreb_lab",
+      "metric": "selected_gt_SD_pct",
+      "expected_paper": 66.6,
+      "replayed": 66.60000000000001,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "bg_1_eligible_splits",
+      "expected_paper": 2000,
+      "replayed": 2000,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "bg_1_background_median",
+      "expected_paper": 0.022,
+      "replayed": 0.022302968597464324,
+      "tolerance": 0.0005,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "bg_1_selected_gt_background_pct",
+      "expected_paper": 11.05,
+      "replayed": 11.05,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "bg_2_eligible_splits",
+      "expected_paper": 1978,
+      "replayed": 1978,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "bg_2_background_median",
+      "expected_paper": 0.024,
+      "replayed": 0.024087585741512332,
+      "tolerance": 0.0005,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "bg_2_selected_gt_background_pct",
+      "expected_paper": 11.02,
+      "replayed": 11.02123356926188,
+      "tolerance": 0.0051,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "bg_3_eligible_splits",
+      "expected_paper": 1849,
+      "replayed": 1849,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "bg_3_background_median",
+      "expected_paper": 0.028,
+      "replayed": 0.028413678717927382,
+      "tolerance": 0.0005,
+      "pass": true
+    },
+    {
+      "dataset": "Sahab",
+      "metric": "bg_3_selected_gt_background_pct",
+      "expected_paper": 10.87,
+      "replayed": 10.870740941049215,
+      "tolerance": 0.0051,
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

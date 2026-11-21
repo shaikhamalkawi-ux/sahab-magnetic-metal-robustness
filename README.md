@@ -15,6 +15,12 @@ The historical **S15** draft had seven listed authors in this order: **Mahdi Sal
 
 The historical S15 was an author-metadata and focused copyediting revision, not a new experiment, dataset, algorithm or independent field validation. It retains all **43 cited references**, including the four Malkawi-related works, and the unchanged **V34** data/code archive. The complete S20R16 article and its Supplementary Materials are held in the author's Google Drive review folder, not published as a GitHub preprint. See [historical S15 author metadata](docs/CURRENT_MANUSCRIPT_AUTHOR_METADATA_S15_20261105.md), the [historical S8 alignment note](docs/S8_MANUSCRIPT_REPOSITORY_ALIGNMENT_20261105.md), and the [public claim-to-reproduction map](docs/S8_REPRODUCIBILITY_MAP_20261105.md). No submission, acceptance, new journal DOI or Sahab Zenodo deposit is claimed.
 
+## S14.1 supplementary reproducibility synced to GitHub (22 November 2026)
+
+The code, input matrices, frozen 2,000-split rows for four study/channel cases, and comparator results for Section S14.1 are now publicly available in [supplementary/S14_1](supplementary/S14_1/README.md). A fresh local execution prior to upload passed **21/21 declared checks across 8,000 dependent split rows**, regenerating outputs byte-for-byte. The original V34 release is unchanged. This is historical within-sample evidence, not new data, spatial validation or contamination predictions.
+
+**Current paper status:** The journal-template S20R16 manuscript PDF is **not uploaded to this public GitHub repository**: final seven-author permission for a public preprint is still unverified, and MDPI prohibits posting the submission-template artwork online. Please see the [manuscript status note](docs/PAPER_STATUS_S20R16.md) for the publication gate. The manuscript's Data Availability Statement already contains the link to this repository; no journal acceptance or paper DOI is asserted.
+
 ## Primary public reproducibility archive
 
 [Download complete V34 data, code and results](release/Sahab_V34_GitHub_Complete_Reproducibility_20261012.zip)
